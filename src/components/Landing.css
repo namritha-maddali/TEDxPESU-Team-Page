@@ -1,0 +1,126 @@
+.background {
+  position: relative;
+  width: 100%;
+  min-height: 105vh;
+  background-image: url('../assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 105vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-sec {
+  flex: 1;
+  max-width: 600px;
+}
+
+.image {
+  width: 100%;
+  max-width: 600px; /* Fixed image length */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
+
+.subtext {
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.side-text {
+  flex: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.ted {
+  color: #e62b1e;
+}
+
+.tedx {
+  color: #e62b1e;
+  font-size: 0.7em;
+  vertical-align: super;
+}
+
+.pesu {
+  color: #fff;
+}
+
+.text {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Previous responsiveness conditions and additional updates */
+@media (max-width: 950px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-sec {
+    width: 80%;
+    max-width: 450px; /* Ensure fixed image size */
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 3.5em;
+  }
+
+  .text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .overlay {
+    padding: 15px;
+  }
+
+  .content {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .text {
+    font-size: 0.9em;
+  }
+}
